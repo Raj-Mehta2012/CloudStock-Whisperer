@@ -62,7 +62,7 @@ Ensure that the buckets are created in the same region as specified in your AWS 
 
 ### 5. Data Ingestion
 
-With the virtual environment activated, run the Python script `ingest_data.py` (or a similar script) to download stock prices from Yahoo Finance using the `yfinance` library. The script should then upload the raw data to the `raw-meta-prices` S3 bucket.
+With the virtual environment activated, run the Python script `fetch_raw_data.py` to download stock prices from Yahoo Finance using the `yfinance` library. The script should then upload the raw data to the `raw-meta-prices` S3 bucket.
 
 ### 6. Glue Job and Crawler
 
