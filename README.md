@@ -108,4 +108,3 @@ For detailed step-by-step instructions on deploying and using the model, refer t
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
