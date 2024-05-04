@@ -31,7 +31,7 @@ Install the required Python packages specified in the ```requirements.txt``` fil
 pip install -r requirements.txt
 ```
 
-Additionally, install the following libraries for interacting with AWS services and retrieving stock data:
+Additionally, install the following libraries for interacting with AWS services and retrieving stock data (Only do this if you are not using virtual environment):
 
 ```bash
 pip3 install yfinance boto3 aws-shell
