@@ -82,9 +82,9 @@ The Glue job should handle tasks such as data cleaning, feature engineering, and
 
 ### 7. SageMaker Notebook Instance
 
-1. Navigate to the SageMaker Console and create a new domain (optional) and a notebook instance. For this project, we recommend using the `ml.t2.medium` instance type, which provides a balance between compute power and cost-effectiveness.
+1. Navigate to the SageMaker Console and create a new domain (optional) and a notebook instance. For this project, I would recommend using the `ml.t2.medium` instance type, which provides a balance between compute power and cost-effectiveness.
 2. Once the notebook instance is created, access the JupyterLab environment and upload the `.ipynb` file from the `Sagemaker Files` directory in the repository.
-3. In the notebook, configure the necessary AWS credentials and specify the S3 bucket locations for input data and model artifacts.
+3. In the notebook, configure the necessary AWS credentials and specify the S3 bucket locations for input data and model artifacts (Optional: only if the bucket & Glue job creation process is different from the one mentioned above).
 4. Run the notebook file, which will load the preprocessed data from the `processed-meta-prices` bucket, train the XGBoost model, and save the model artifacts and output to a new S3 bucket.
 
 ### 8. Model Deployment
@@ -103,7 +103,7 @@ xgb_predictor = xgb.deploy(
 
 The deployed model can then be used for making predictions on new data, either on the local system or within the AWS ecosystem. You can invoke the model endpoint using the SageMaker SDK or integrate it with other AWS services like Lambda or API Gateway for real-time inference.
 
-For detailed step-by-step instructions on deploying and using the model, refer to the AWS documentation: [Deploying a Model in Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-model-deployment.html#ex1-deploy-model-sdk-use-endpoint).
+For detailed step-by-step instructions on deploying and using the model, refer to the AWS documentation: [AWS Documentation: Deploying a Model in Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-model-deployment.html#ex1-deploy-model-sdk-use-endpoint).
 
 ## License
 
