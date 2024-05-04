@@ -1,0 +1,5 @@
+yfinance
+boto3
+pandas
+numpy
+aws-shell
