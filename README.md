@@ -1,4 +1,4 @@
-# KalmanFilter_Predictions_AWS
+# KalmanFilter/XGBoost_Predictions_AWS
  
 Create a Virtual Environment:
 ```python3 -m venv .awsvenv```
@@ -14,4 +14,8 @@ Setup AWS Credentials:
 
 Enter ```configure``` inside aws-shell and enter your AWS details
 
-Create a s3 bucket called ```raw-meta-prices```
+Create two s3 buckets called ```raw-meta-prices``` and ```processed-meta-prices```
+
+
+
+
